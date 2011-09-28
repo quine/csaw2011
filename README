@@ -1,0 +1,13 @@
+This is the repository for the challenges I've contributed to CSAW CTF 2011.
+Challenges are added once each part of the contest is over (quals -> finals).
+
+- haderp.py
+The "Reversing 200" challenge for CSAW CTF qualifiers. A fairly simple,
+Twisted-based network server with a damning issue -- pickle! The goal was for
+challengers to poke around a bit until the service *deliberately* dumped a
+stack trace, showing the use of pickle and base64. Challengers would then
+supply an encoded, serialized object with code of their choice, ultimately
+resulting in code execution and/or command execution. The problems with
+Python pickle are old, but have recently gained new attention. I felt this was
+a different, potentially fun challenge that CSAW CTF participants might not be
+intimately familiar with.
